@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 95%;
+            max-width: 1200px;
+            background: white;
+            box-shadow: 0 10px 30px ;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left-column {
+            flex: 0 0 60%; 
+            position: relative;
+            border: 15px solid white; 
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease;
+            display: block;
+        }
+
+        .left-column:hover img {
+            opacity: 0.4;
+        }
+
+        .right-column {
+            flex: 0 0 40%; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            box-sizing: border-box;
+            border-left: 1px solid #eee;
+        }
+
+        .article-preview {
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .curtain {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: top 0.4s ease;
+            z-index: 2;
+            font-weight: bold;
+        }
+
+        #read-more-toggle { 
+            display: none; 
+        }
+
+        .full-text {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        #read-more-toggle:checked ~ .full-text {
+            max-height: 500px;
+            margin-top: 15px;
+        }
+
+        .read-more-label {
+            color: #e74c3c;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .favorite-container {
+            margin-top: auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            position: relative;
+            border: 1px solid #ddd;
+        }
+
+        .save-btn {
+            background:#e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .save-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .feedback-tab {
+            position: absolute;
+            right: -80px; 
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            background: #2c3e50;
+            color: white;
+            padding: 5px 15px;
+            font-size: 20px;
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-column">
+        <img src="https://img.freepik.com/premium-photo/trees-field-by-mountains-against-sky-autumn_1048944-15439013.jpg?semt=ais_hybrid&w=740" alt="Пейзаж">
+    </div>
+
+    <!-- Правая часть -->
+    <div class="right-column">
+        <div class="article-preview">
+            <div class="curtain">Узнать больше о природе</div>
+            <h3>Тайны дикой природы</h3>
+            <p>Природа всегда удивляет нас своей красотой и сложностью.</p>
+        </div>
+
+        <input type="checkbox" id="read-more-toggle">
+        <label for="read-more-toggle" class="read-more-label">Читать полный текст</label>
+            
+        <div class="full-text">
+            <p>Полный текст статьи: Здесь описываются детали экспедиции, уникальные виды животных и растений, которые были обнаружены в ходе последних исследований 2026 года. Мы стремимся сохранить это наследие для будущих поколений.</p>
+        </div>
+        <div class="favorite-container">
+            <p>Если вам понравилась статья добавьте ее в избранное чтобы не потерять)</p>
+            <button class="save-btn">В избранное</button>
+            
+            <div class="feedback-tab">Обратная связь</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
