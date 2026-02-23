@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Меню */
+.menu {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu a, .menu button {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.menu button {
+    background-color: #ff6b6b;
+    border: none;
+}
+
+/* Баннер */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Преимущества */
+.advantages {
+    padding: 40px 0;
+}
+
+.advantages h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Тарифы */
+.tariffs {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.tariffs h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tariffs .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.tariffs h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* О нас */
+.about {
+    padding: 40px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify
