@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Название страницы</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            SURFFFING
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#advant">Преимущества</a></li>
+                <li><a href="#trafic">Тарифы</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#application">Форма заявки</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+
+</header>
+<section id="home" class="banner">
+    <div class="container" style="display: block">
+        <h1>Мастер-классы по катанию на серфе</h1>
+        <p>Сeрфить можно не только в интернете!</p>
+        <a href="#application" class="btn">Подать заявку</a>
+    </div>
+</section>
+ <section id="advantages">
+        <div class="container" style="display: block;">
+            <h2>Наши преимущества</h2>
+            <!-- Ряд из карточек, flex расставит их по центру -->
+            <div class="row">
+                <div class="advantage-card">
+                    <div class="icon">⏱️</div>
+                    <h3>Гибкий график</h3>
+                    <p>Занимайтесь в любое время без привязки к расписанию</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon">🧑‍🏫</div>
+                    <h3>Личный наставник</h3>
+                    <p>Опытный преподаватель закреплен только за вами</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon">📚</div>
+                    <h3>Программа под вас</h3>
+                    <p>Материалы составляются под ваш уровень и цели</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="icon">💬</div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Отвечаем на вопросы в любое время суток</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <section id="tariffs" style="background-color: #f0f8ff;"> <!-- Светло-голубой фон для разнообразия -->
+        <div class="container" style="display: block;">
+            <h2>Выберите тариф</h2>
+            <div class="row">
+                <div class="tariff-card">
+                    <h3>Базовый</h3>
+                    <p style="font-size: 32px; color: #007bff; margin: 20px 0;">5 000 ₽</p>
+                    <p>4 занятия в месяц</p>
+                    <p>Проверка домашек</p>
+                    <p>Чат с преподавателем</p>
+                    <br>
+                    <a href="#application" class="btn">Выбрать</a>
+                </div>
+                <div class="tariff-card">
+                    <h3>Стандарт</h3>
+                    <p style="font-size: 32px; color: #007bff; margin: 20px 0;">9 000 ₽</p>
+                    <p>8 занятий в месяц</p>
+                    <p>Индивидуальные материалы</p>
+                    <p>Разбор ошибок</p>
+                    <br>
+                    <a href="#application" class="btn">Выбрать</a>
+                </div>
+                <div class="tariff-card">
+                    <h3>Премиум</h3>
+                    <p style="font-size: 32px; color: #007bff; margin: 20px 0;">15 000 ₽</p>
+                    <p>12 занятий в месяц</p>
+                    <p>Личный куратор</p>
+                    <p>Доп. материалы</p>
+                    <br>
+                    <a href="#application" class="btn">Выбрать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="about">
+        <div class="container" style="display: block;">
+            <h2>О нас</h2>
+            <div class="about-row">
+                <div class="about-text">
+                    <h3 style="margin-bottom: 20px;">Мы создаем образование будущего</h3>
+                    <p>Наша платформа объединяет опытных преподавателей и студентов, которые хотят получитьмаксимум от обучения. Индивидуальный подход — не просто слова. Мы адаптируем программу под ваш ритм жизни, текущие знания и конечную цель.</p>
+                    <p style="margin-top: 20px;">Более 1000 студентов уже прошли обучение и достигли результатов: от повышения на работе до смены профессии.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Картинка-заглушка от placeholder.com -->
+                    <img src="https://lomonosovsky.mos.ru/New%20Folder/08ad40c830b24b613563564e11f7009f.jpg" alt="О нас">
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="application" style="background-color: #e9ecef;">
+        <div class="container" style="display: block;">
+            <h2>Запись на курс</h2>
+            <div class="form-container">
+                <!-- Форма. action="#" — отправка на ту же страницу -->
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Почта</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Комментарий</label>
+                        <textarea id="comment" name="comment" rows="4" placeholder="Ваши пожелания или вопросы"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<footer>
+        <div class="container">
+            <div class="logo">SURFFFING</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#tariffs">Тарифы</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#application" class="menu-btn">Подать заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="C:\Users\Artemik\Desktop\Html&JS\main.js"></script>
+</body>
+</html>
